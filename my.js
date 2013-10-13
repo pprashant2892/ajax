@@ -14,7 +14,7 @@ function process(){
 	if(xmlHttp){
 		name = encodeURIComponent(document.getElementById("username").value);
 		document.getElementById("display").innerHTML='<img src="http://prashantyadav.x10host.com/projects/tgmc/my/loading.gif" width="100px" height=""100px/>';
-		xmlHttp.open("GET","my.php?username="+name,true);
+		xmlHttp.open("GET","http://prashantyadav.x10host.com/projects/tgmc/my/my.php?username="+name,true);
 		xmlHttp.onreadystatechange = serverResponse;
 		xmlHttp.send(null);
 	}
